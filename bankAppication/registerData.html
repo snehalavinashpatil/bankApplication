@@ -1,0 +1,210 @@
+<html>
+    <head>
+        <title>Customer data</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <style>
+          body {
+	padding:0;
+	line-height: 1.5em;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	background: #ffffff;
+    margin: 0px auto;
+	width: 930px;
+	margin-top: 15px;
+}
+
+.container {
+    margin: 15px auto;
+    background: #6ebfdc;
+    padding: 20px;
+}
+#header {
+	margin: 0px;
+	float: right;
+	width: 690px;
+	height: 100px;
+	background: url(/images/templatemo_heading_background.jpg) no-repeat;
+}
+
+#header .title{
+	padding: 10px 0px 0px 180px;
+	font-size: 20px;
+	font-weight:bold;
+	color: #333333;
+	line-height: 25px;
+}
+
+#header .bigtext{
+	font-size: 30px;
+	font-weight:bold;
+	color: #ffffff;
+}
+
+#templatemo_menu {
+	clear: both;
+	margin-bottom: 5px;
+	padding: 0px;
+	width: 930px;
+	height: 50px;
+	background: #008fc1;
+}
+
+.logo{
+    font-style: italic;
+}
+
+.displayFlex {
+    display: flex;
+}
+
+#headerLogo {
+	float: left;
+	width: 225px;
+	height: 28px;
+	padding: 10px 0px 0px 15px;
+}
+
+#menu {
+	float: right;
+	width: 690px;
+	height: 35px;
+	margin: 0px;
+}
+
+#menu ul {
+	margin: 0px;
+	text-align: right;
+	list-style: none;
+}
+
+#menu ul li {
+	margin: 0px;
+	display: inline;	
+}
+
+#templatemo_menu ul li a {
+	margin: 0px;
+	display:inline-block;
+	height: 30px;
+	padding: 15px 20px 0px 20px;
+	font: 17px arial;
+    font-weight: bold;
+	color:#000000;
+	text-decoration: none;
+}
+
+#menu ul li a:hover, #menu ul li .current {
+	color: #FFF;
+}
+
+#templatemo_content {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 930px;
+}
+#templatemo_footer {
+	clear: both;
+	padding: 10px 0px 0px 0px;
+	width: 930px;
+	height: 50px;
+	text-align: center;
+	color: #666;
+	background: #d5d5d5;
+	text-align: center;
+}
+
+#templatemo_footer a{
+	color: #666;
+}
+
+#templatemo_footer a:hover{
+	color: #ffffff;
+}
+h1 {
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.paddingBtm20{
+    padding-bottom: 20px;
+}
+label{
+    font-size: 20px;
+    padding: 5px;
+}
+.transferBtn{
+    justify-content: center;
+    padding: 20px;
+}
+
+.bold{
+    font-weight: bold;
+}
+    </style>
+    </head>
+    <body>
+        <div id="templatemo_menu">
+            <div id="headerLogo">
+                    <!-- <input class="textfield" type="text" value="Search..."/> <input class="send_btn" type="submit" value="Go" /> -->
+                    <h1 class="logo ">My Bank</h1>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a href="#" class="current">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Solutions</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <form action="VerifyData" method="post">
+                <h1>First Time User Registration</h1>
+                <div class="form-group">
+                    <label for="accountNumber">Enter Account Number</label>
+                    <input type="text" name="accountNumber" id="accountNumber" class="form-control">
+                </div>
+     
+                <div class="form-group">
+                 <label for="fullName">Enter full Name</label>
+                 <input type="text" name="fullName" id="fullName" class="form-control">
+                </div>
+     
+                <div class="form-group">
+                 <label for="accountBalance">Enter Amount</label>
+                 <input type="text" name="accountBalance" id="accountBalance" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="username">Enter username</label>
+                    <input type="text" name="username" id="username" class="form-control">
+                </div>
+     
+                <div class="form-group">
+                 <label for="pass">Enter password</label>
+                 <input type="password" name="pass" id="pass" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="username">Enter Branch Name</label>
+                    <input type="text" name="branch" id="branch" class="form-control">
+                </div>
+     
+                <button type="submit" class="btn btn-primary">Register</button>
+                
+             </form>
+        </div>
+        <div id="templatemo_footer">
+            <a href="#">Home</a> | <a href="#">About Us</a> | <a href="#">Services</a> | <a href="#">Solutions</a> | <a href="#">Contact Us</a><br />
+            Copyright ©  <a href="#">MY BANK</a> | Design By Snehal</div>
+    </body>
+</html>

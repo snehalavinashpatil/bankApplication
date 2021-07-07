@@ -1,0 +1,431 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>Bank Application Website</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+    body {
+	margin:0;
+	padding:0;
+	line-height: 1.5em;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	background: #ffffff;
+}
+
+a:link, a:visited { color: #008fc1; text-decoration: none; } 
+a:active, a:hover { text-decoration: underline; }
+
+
+h1 {
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.logo {
+    font-style: italic;
+}
+
+input,button {
+    color: #000000;
+}
+
+h2 {
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	font-size: 15px;
+	font-weight: bold;
+	color:#ffffff;
+}
+
+h3 {
+	margin: 0px;
+	padding: 0px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #37a7ce;
+	text-decoration: underline;
+}
+
+h4 {
+	margin: 0px;
+	padding: 10px 0px 0px 0px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+}
+
+p {
+	margin: 10px 0px;
+	color: #5b5847;
+	text-align: justify;
+}
+
+.displayFlex {
+    display: flex;
+}
+
+img {  
+	margin: 0px; 
+	padding: 0px;
+}
+
+#templatemo_container {
+	margin: 0px auto;
+	width: 930px;
+	margin-top: 15px;
+}
+
+.send_btn {
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	height: 19px;
+	width: 27px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #0a8eb8;
+	text-decoration: none;
+	background: none;
+	border: none;
+}
+
+.textfield {
+	margin: 0px 5px 0px 0px;
+	padding: 0px;
+	float: left;
+	height: 19px;
+	width: 175px;
+	font: 12px Arial;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+	border: 1px solid #CCCCCC;
+}
+
+.more_button a{
+	clear: both;
+	display: block;
+	width: 57px;
+	height: 19px;
+	margin-left: 100px;
+	padding: 0px 0px 0px 10px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+    #templatemo_container {
+	margin: 0px auto;
+	width: 930px;
+	margin-top: 15px;
+}
+#templatemo_header {
+	clear: both;
+	padding: 0px;
+	margin: 0px 0px 5px 0px;
+	width: 930px;
+	height: 100px;
+}
+#logosection {
+	margin: 0px 3px 0px 0px;
+	float: left;
+	width: 235px;
+	height: 100px;
+	font-style: italic;
+}
+.sitename {
+	margin: 10px 0px 0px 20px;
+	padding: 0px;
+	font: 35px Arial;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+.sitename span {
+	font-weight: normal;
+}
+
+#header {
+	margin: 0px;
+	float: right;
+	width: 690px;
+	height: 100px;
+	background: url(/images/templatemo_heading_background.jpg) no-repeat;
+}
+
+#header .title{
+	padding: 10px 0px 0px 180px;
+	font-size: 20px;
+	font-weight:bold;
+	color: #333333;
+	line-height: 25px;
+}
+
+#header .bigtext{
+	font-size: 30px;
+	font-weight:bold;
+	color: #ffffff;
+}
+
+#templatemo_menu {
+	clear: both;
+	margin-bottom: 5px;
+	padding: 0px;
+	width: 930px;
+	height: 50px;
+	background: #008fc1;
+}
+
+#headerLogo {
+	float: left;
+	width: 225px;
+	height: 28px;
+	padding: 10px 0px 0px 15px;
+}
+
+#menu {
+	float: right;
+	width: 690px;
+	height: 35px;
+	margin: 0px;
+}
+
+#menu ul {
+	margin: 0px;
+	text-align: right;
+	list-style: none;
+}
+
+#menu ul li {
+	margin: 0px;
+	display: inline;	
+}
+
+#templatemo_menu ul li a {
+	margin: 0px;
+	display:inline-block;
+	height: 30px;
+	padding: 15px 20px 0px 20px;
+	font: 17px arial;
+    font-weight: bold;
+	color:#000000;
+	text-decoration: none;
+}
+
+#menu ul li a:hover, #menu ul li .current {
+	color: #FFF;
+}
+
+#templatemo_content {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 930px;
+}
+
+#templatemo_left_column {
+	float: left;
+	margin: 0px 10px 5px 0px;
+	padding: 20px 10px;
+	width: 300px;
+	background: #e0e0e0;
+	min-height: 440px;
+}
+
+#leftcolumn_box01 {
+	width: 280px;
+	padding: 0px;
+	background: #008fc1;	
+	margin: 0px 0px 10px 0px;	
+}
+#imagebutton {
+	width: 215px;
+	margin: 0px 0px 10px 0px;	
+}
+#imagebutton a, img{
+	border: none;
+}
+
+#leftcolumn_box01 .leftcolumn_box01_top{
+	width: 195px;
+	height: 15px;
+	padding: 10px;
+}
+#leftcolumn_box01 .leftcolumn_box01_bottom{
+	width: 195px;
+	padding: 10px;
+	color: #FFFFFF;
+}
+
+#leftcolumn_box02 {
+    height: 220px;
+	width: 280px;
+	padding: 10px 10px 10px 15px;
+	background: #6ebfdc;
+}
+
+#leftcolumn_box02 ul {
+	margin: 0px;
+	padding: 3px 0px 0px 3px;
+	list-style: none;
+}
+
+#leftcolumn_box02 ul li{
+	display: block;
+    margin: 5px 0px 5px 0px;
+    padding: 5px;
+    font-size: 15px;
+    border: 2px solid #008fc1;
+}
+
+#leftcolumn_box02 ul li a{
+	padding: 0px 0px 0px 15px;
+	margin: 0px;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+#leftcolumn_box02 ul li a:hover{
+	text-decoration: none;
+}
+
+#templatemo_middle_column {
+	float: left;
+	margin: 0px 0px 5px 0px;
+	padding: 20px 5px;
+	width: 610px;
+	min-height: 440px;
+}
+
+#templatemo_footer {
+	clear: both;
+	padding: 10px 0px 0px 0px;
+	width: 930px;
+	height: 50px;
+	text-align: center;
+	color: #666;
+	background: #d5d5d5;
+	text-align: center;
+}
+
+#templatemo_footer a{
+	color: #666;
+}
+
+#templatemo_footer a:hover{
+	color: #ffffff;
+}
+</style>
+</head>
+
+<body>
+<div id="templatemo_container">
+   
+    <!-- <div id="templatemo_header">
+    	<div id="logosection">
+        	<div class="sitename">            	
+            	My Bank<span></span>            
+            </div>
+      </div>
+        <div id="header">
+        	<div class="title">
+            	We Offer<br />
+	        	<span class="bigtext">The Best Strategy</span><br />
+    	    	For your business.</div>
+
+        </div>
+	</div> -->
+    
+	<div id="templatemo_menu">
+    	<div id="headerLogo">
+				<!-- <input class="textfield" type="text" value="Search..."/> <input class="send_btn" type="submit" value="Go" /> -->
+                <h1 class="logo">My Bank</h1>
+    	</div>
+        <div id="menu">
+            <ul>
+                <li><a href="#" class="current">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Solutions</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+	</div>
+    
+	<div id="templatemo_content">
+    
+    	<div id="templatemo_left_column">        	
+
+            <div id="leftcolumn_box01">
+                <div class="leftcolumn_box01_top">
+                    <h2>Customer Login</h2>
+                </div>
+                <div class="leftcolumn_box01_bottom">
+                    <!-- <form method="get" action="#">
+                      <div class="form_row"><label>Email</label><input class="inputfield" name="email_address" type="text" id="email_addremss"/></div>
+                        <div class="form_row"><label>Password</label><input class="inputfield" name="password" type="password" id="password"/></div>
+                        <input class="button" type="submit" name="Submit" value="Login" />
+                    </form> -->
+                    <form action="loginData" method="post">
+                        <div class="form-row displayFlex">
+                            <label for="sname marginRight10"> Username</label>
+                            <input class="inputfield" type="text" name="sname" id="sname" class="form-control">
+                        </div>
+                        <div class="form-row displayFlex">
+                         <label for="pass">Password</label>
+                         <input class="inputfield" type="password" name="pass" id="pass" class="form-control">
+                        </div>
+                        <button class="button" type="submit" class="btn btn-primary">Login</button>
+                     </form>
+					 <form action="registerData" method="post" class="displayFlex ">
+						 <h2 class="marginRight10">Registration</h2>
+						<button type="submit" class="button">Register</button>
+					</form>
+                </div>            
+            </div>
+            
+           <div id="leftcolumn_box02">
+            	<h2>Welcome to MyBank Online</h2>
+                <ul>
+                  <li><a href="#">Credit card offers</a></li>
+                  <li><a href="#">Personal loans</a></li>
+                    <li><a href="#">Online banking</a></li>
+                    <li><a href="#">Fixed deposites</a></li>
+                    <li><a href="#">Offers</a></li>
+                </ul>
+            </div> 
+            
+        </div>
+        
+    	<div id="templatemo_middle_column">
+        
+        	<h1>Welcome to our  website</h1>
+          <p>
+            Steps to redeem the offer
+Collect the reward(s) above
+Place eligible order to get cashback
+Cashback would be credited as Amazon Pay Balance into your Amazon account within 24 hours of placing an eligible order
+This offer can't be clubbed with any other offer and is valid only once per customer during the duration of the offer
+Refer to detailed Terms & Conditions by clicking on 'View Rewards' above.</p>
+          <p>
+			Steps to redeem the offer
+			Collect the reward(s) above
+			Place eligible order to get cashback
+			Cashback would be credited as Amazon Pay Balance into your Amazon account within 24 hours of placing an eligible order
+			This offer can't be clubbed with any other offer and is valid only once per customer during the duration of the offer
+			Refer to detailed Terms & Conditions by clicking on 'View Rewards' above. <a href="#">Read more...</a>
+            </p> <br />       
+        </div>
+    </div>
+
+	<div id="templatemo_footer">
+        <a href="#">Home</a> | <a href="#">About Us</a> | <a href="#">Services</a> | <a href="#">Solutions</a> | <a href="#">Contact Us</a><br />
+        Copyright ©  <a href="#">MY BANK</a> | Design By Snehal</div>
+
+</div>
+</body>
+</html>
